@@ -36,6 +36,7 @@ body{
   font-family: "Poppins", sans-serif;
   */
   font: var(--fz)/var(--lh) "Poppins", sans-serif;
+  color: var(--text-color);
 }
 
 
@@ -142,4 +143,41 @@ header{
 
 .top_nav .dropdown ul li:hover{
   color: #5E6282;  
+}
+
+/* HEADER CONTENT */
+
+header .content{
+  display: flex;
+  justify-content: space-between;
+}
+
+header .content .desc{
+  width: 545px;
+}
+
+header .content .desc h3{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #DF6951;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+header .content .desc h2{
+  font-family: "Volkhov", bold;
+  font-size: 84px;
+  line-height: 89px;
+  letter-spacing: -3.36px;
+  color: #181E4B;
+  margin-bottom: 30px;
+}
+
+header .content .desc p{
+  width: 477px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 34px;
 }
