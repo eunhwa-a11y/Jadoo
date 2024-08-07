@@ -46,19 +46,33 @@ body{
 /* HEADER */
 
 header{
-  padding: 47px 0;
   background:
   url(../images/header_bg.svg) right top no-repeat,
   url(../images/header_ellipse.svg) left top no-repeat;
+}
+
+.logo a{
+  width: 116px;
+  height: 35px;
+  display: block;
+  background: url(../images/Logo.svg) no-repeat;
+  text-indent: -9999em;
 }
 
 .top_nav{
   padding: 47px;
 }
 
+.top_nav a{
+  font-family: 'Product Sans Medium Regular';
+  font-size: 17px;
+  color: #212832;
+}
+
 .top_nav > div{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .top_nav.fixed{
@@ -73,6 +87,7 @@ header{
 
 .top_nav nav{
   display: flex;
+  align-items: center;
 }
 
 .top_nav ul{
@@ -87,4 +102,44 @@ header{
 .login_links{
   gap: 50px;
   margin-right: 42px;
+}
+
+.login_links a{
+  height: 40px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  display: block;
+  line-height: 40px;
+  transition: 0.3s;
+}
+
+.login_links a:hover{
+  border-color: #212832
+}
+
+.top_nav .dropdown{
+  position: relative;
+}
+
+.top_nav .dropdown ul{
+  position: absolute;
+  right: 0;
+  top: 100%;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-color: #212832;
+  flex-direction: column;
+  border-radius: 5px;
+  background: var(--white);
+  display: none;
+}
+
+.top_nav .dropdown ul li{
+  padding: 0 15px;
+  line-height: 30px;
+}
+
+.top_nav .dropdown ul li:hover{
+  color: #5E6282;  
 }
